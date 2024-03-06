@@ -16,7 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="bg-slate-500 max-w-screen">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl p-6">
+          Chat bort
+        </h1>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }
